@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="staledz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главая</title>
+    
+</head>
+<body> 
+   <div class="header">
+       <a href="indexdz.html">
+           <img class="logo" src="Imgdz/logo.svg" alt="logo">
+       </a>
+        <nav>
+            <Ul class="list">
+                <li class="hader_text"> <a class="menu_link" href="indexdz.html"> Главная</li></a>
+                <li class="hader_text"><a class="menu_link" href="stydent.html">Студенты</li></a>
+                <li class="hader_text"><a class="menu_link menu_link_activ" href="o_nas.html">О курсе</li></a>
+                <li class="hader_text"><a class="menu_link" href="kont.html">Контакты</li></a>
+               </Ul>
+        </nav>
+       <a class="batton" href="#">Войти</a>
+   </div>
+   <div class="registration">
+    <div class="okno">
+        <form class="form" action="#">
+            <h4 class="text_registration">Войти на сайт</h4>
+            <input class="form_input" type="text" placeholder="Логин" required>
+            <input class="form_input" type="password" placeholder="Пароль" required>
+            <button class="btn form_btn" type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+    <main class="content-o_nas">
+       <h2 class="subtitle_o_nas">О курсе 📱</h2> 
+       <p class="subtitle_text_o_nas">Посмотрите видео о нас</p>  
+      <div class="video_o_nas">
+        <img src="Imgdz/video 1.jpg" alt="video">
+      </div>
+    </main>    
+    <footer class="footer">
+        <p class="footer_text">2022 &copy;  <a class="footer_text" href="indexdz.html">учебный центр</a></p>
+    </footer>
+    <script>
+        const loginButton = document.querySelector('.batton');
+        const registrationEL = document.querySelector('.registration');
+        loginButton.addEventListener('click', function (e) {
+            registrationEL.classList.toggle('registration');
+        });
+
+        const burgerEl = document.querySelector('.burger');
+        const menuEl = document.querySelector('.menu');
+        burgerEl.addEventListener('click', function () {
+            burgerEl.classList.toggle('active');
+            menuEl.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
